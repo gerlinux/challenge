@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="normalize.css">-->
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="" class="logo-img">
+    </header>
+    <main class="contenedor">
+        <section class="text_enc">
+            <!--<p>Encriotador</p>-->
+            <div class="texto">
+                <textarea  id="texta" class="text-area" rows="4" cols="10" placeholder="Ingrese texto aqui" ></textarea>
+            </div>
+            <div class="terminos">
+                <p class="texto-info">&#9432 Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="botones__configuration boton-enc" onclick="encriptar()">Encriptar</button>
+                <button class="botones__configuration boton-desenc" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="right-panel">
+            <!--<section class="sidebar_info" id="sidebar_info">-->
+                
+                <!--<img src="./img/muneco.png" alt="" class="muneco" id="muneco"/>-->
+                <textarea readonly id="sidebar_desenc__text-a" rows="15" cols="10" aria-labelledby="sidebar_desenc__text-a"></textarea>
+                <h2 class="texto-sidebar" id="texto-sidebar">Ningun mensaje fue encontrado</h2>
+                <p class="sub-texto-sidebar" id="sub-texto-sidebar">Insgresa el texto que deseas desencriptar o encriptar</p>
+            <!--</section>
+            <section class="sidebar_desenc" id="sidebar_desenc">-->
+               
+                <button class="boton-sidebar" id="copy-button" onclick="copy()">Copiar</button>
+            <!--</section>-->
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer">
+            Creador por: Laureano German Mella 07/2024
+        </p>
+    </footer>
+    
+</body>
+<script src="./js/script.js"></script>
+</html>

@@ -1,0 +1,392 @@
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+:root{
+    --colorPrimario: #000000;
+    --colorSecundario: #F6F6F6;
+    --colorTerciario: #22D4FD;
+    --colorFondo: #F3F5FC;
+    --blanco: #ffffff;
+    --colorFuentePrincipal: #0A3871;
+    --fuentePrincipal: 'Montserrat', sans-serif;
+}
+body, html{
+    height: 100vh; 
+    box-sizing: border-box;
+    background-color:var(--colorFondo);
+    color:var(--colorFuentePrincipal);
+}
+
+.header{
+    padding: 2% 0 0 5%;
+}
+
+.logo-img{
+}
+.contenedor{
+
+    width: 100vw;
+    height: 85vh;
+    background-color: var(--colorFondo);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.text_enc{
+    
+    background-color: var(--colorFondo);
+    
+    height: 95%;
+    width:50%;
+
+    left: 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+.right-panel{
+    box-shadow: 0 24px 32px -8px rgba(0,0,0,0.08);
+
+    background-color: var(--blanco);
+    border-radius: 24px;
+    width: 25%;
+    height: 95%;
+    left: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.text-area{
+    
+    width: 80%;
+    height: 450px;
+    margin-top: 5%;
+
+    margin-left: 10%;
+    background-color: var(--colorFondo);
+    border-style: none;
+
+
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
+    color: var(--colorFuentePrincipal);
+    line-height: 150%;
+
+}
+
+.boton-sidebar{
+    
+    width: 320px;
+    padding: 1.5%;
+    margin: 0.3%;
+    height: 8%;
+    align-items: center;
+
+    border-radius: 16px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorFuentePrincipal);
+    bottom: 0px;
+}
+.text-area::placeholder{
+
+    color: var(--colorFuentePrincipal);
+}
+.text-area:focus,
+.text-area:active{
+    border: none;
+    outline: none;
+}
+.terminos{
+    margin-top: 20px;
+
+}
+.texto-info{
+
+    font-family: var(--fuentePrincipal);
+    color: var(--colorFuentePrincipal);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-left: 10%;
+
+}
+
+.botones{
+
+    display: flex;
+    margin-top: 20px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    width: 80%;
+  
+    margin-left: 10%;
+
+}
+.botones__configuration{
+    
+    
+    border: 1px solid #0A3871;
+    text-align: center;  
+    
+    width: 48%;
+    border-radius: 24px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorFuentePrincipal);
+
+    padding: 20px 40px;
+}
+.boton-enc:hover
+{
+    background-color:  #041f41;
+}
+.boton-desenc:hover{
+    background-color:  #9dadc1;
+}
+.boton-enc{
+    background-color: #0A3871;
+    color: #F6F6F6;
+}
+
+.boton-desenc{
+    background-color: #D8DFE8;
+    color: #0A3871;
+
+}
+
+.boton-sidebar{
+
+    display: none;
+    position: relative;
+
+    border: 1px solid #0A3871;
+    text-align: center;
+    
+    
+    
+    width: 280px;
+    border-radius: 24px;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorFuentePrincipal);
+
+
+    margin-top: 220px;
+
+    background-color: #D8DFE8;
+    color: #0A3871;
+
+}
+.boton-sidebar:hover{
+    background-color:  #9dadc1;
+}
+
+.texto-sidebar{
+
+
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    
+    width: 60%;
+
+    text-align: center;
+}
+.sub-texto-sidebar{
+
+
+    padding-top: 10px;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    width: 60%;
+    line-height: 120%;
+    text-align: center;
+}
+
+.footer{
+ 
+    display: flex;
+    justify-content: center;
+    background-color: #0A3871;
+    height: 60px;
+    color: white;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+    
+}
+#sidebar_desenc__text-a{
+    
+    border-style: none;
+
+    background-image: url("muneco.png");
+    background-repeat: no-repeat;
+     
+    font-family: var(--fuentePrincipal);
+    font-size: 1.2rem;
+    color: var(--colorFuentePrincipal);
+    width: 80%;
+}
+#sidebar_desenc__text-a:focus,
+#sidebar_desenc__text-a:active{
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 992px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .text_enc{
+        
+        text-align: left;
+        align-items: left;
+       
+        width: 100%;
+        height: 500px;
+        
+        padding-bottom: 0;
+        
+        margin-left: 5%;
+
+        padding-left: 5%;
+        
+        padding-bottom: 0;        
+    }
+    .text-area{
+        margin-left: 0;
+        height: 80%;
+        
+        align-items: flex-start;
+       
+    }
+    
+    .texto-info{
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .right-panel{
+        width: 85%;
+        height: 25%;
+        text-align: center;
+        text-align: center;
+
+        margin-left:10%;
+        padding-left: 0;
+
+        background-color: white;
+
+        border-radius: 24px;
+        box-shadow: 0 24px 32px -8px rgba(0,0,0,0.08);
+    }
+    .botones{
+        background-color: #F3F5FC;
+        align-items: center;
+        margin-left: 0;
+        width: 90%;
+
+    }
+    .boton-enc,
+    .boton-desenc{
+        width: 48%;
+    }
+    .botones__configuration{
+        
+    }
+
+    #sidebar_desenc__text-a{
+        width: 90%;
+       
+        background-image: none;
+        height: 150px; 
+        
+        margin-top: 10px;
+        
+        position: relative;
+        
+    }
+    .texto-sidebar{
+        position: absolute;
+        
+    }
+    .sub-texto-sidebar{
+        position: absolute;
+        margin-top: 50px;
+    }
+    .boton-sidebar{
+        width: 90%;
+        height: 70px;
+        background-color: white;
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .footer{
+        display: none;
+    }
+}
+
+    @media (max-width: 700px){
+
+        .botones{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .boton-desenc,
+        .boton-enc{
+            width: 100%;
+        }
+        .texto-sidebar{
+            font-size: 1.2rem;
+            height: auto;
+            position: absolute;
+            margin-top: 0;
+            
+        }
+        .sub-texto-sidebar{
+            font-size: 1rem;
+            margin-top: 100px;
+            position: absolute;
+        }
+        .sidebar_desenc__text-a{
+           
+        }
+
+    }
