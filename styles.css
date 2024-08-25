@@ -185,15 +185,16 @@ body, html{
     
     
     width: 280px;
+    height: 60px;
     border-radius: 24px;
 
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
     font-family: var(--fuentePrincipal);
     color: var(--colorFuentePrincipal);
 
 
-    margin-top: 220px;
+    margin-top: 175px;
 
     background-color: #D8DFE8;
     color: #0A3871;
@@ -253,6 +254,8 @@ body, html{
 
     background-image: url("muneco.png");
     background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
      
     font-family: var(--fuentePrincipal);
     font-size: 1.2rem;
@@ -326,12 +329,8 @@ body, html{
     .boton-desenc{
         width: 48%;
     }
-    .botones__configuration{
-        
-    }
-
     #sidebar_desenc__text-a{
-        width: 90%;
+        width: 85%;
        
         background-image: none;
         height: 150px; 
@@ -350,8 +349,8 @@ body, html{
         margin-top: 50px;
     }
     .boton-sidebar{
-        width: 90%;
-        height: 70px;
+        width: 85%;
+        height: 75px;
         background-color: white;
         
         margin-top: 10px;
@@ -363,7 +362,7 @@ body, html{
     }
 }
 
-    @media (max-width: 700px){
+    @media (max-width: 768px){
 
         .botones{
             flex-direction: column;
@@ -386,7 +385,10 @@ body, html{
             position: absolute;
         }
         .sidebar_desenc__text-a{
-           
+           padding-top: 10px;
+        }
+        .boton-sidebar{
+            width: 90%;
         }
 
     }
